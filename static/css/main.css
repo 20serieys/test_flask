@@ -1,0 +1,34 @@
+body{
+    background-color: slategray;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.thekeypad{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 35px;
+    grid-gap: 5px;
+    max-width:120px;
+}
+
+.keypad_btn{
+    background-color: black;
+    opacity: 0.75;
+    color: cyan;
+}
+
+.character_stats{
+    position:relative;
+    background-color:rgba(101, 126, 158, 0.87); 
+    border: 3px solid black; 
+    width:150px; 
+    height:150px; 
+    margin-left:80px; 
+    margin-top:30px; 
+    padding:20px;
+}
