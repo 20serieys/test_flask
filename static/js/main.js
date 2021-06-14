@@ -126,7 +126,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     socket.on("response", function(data){
         console.log(data)
-        for( var k=0; k<1; k++){ // 14 car 6 monstres et 1 joueurs fois deux coordonnées
+        for( var k=0; k<14; k++){ // 14 car 6 monstres et 1 joueurs fois deux coordonnées
             var cell_id = "cell " + data[k].i + "-" + data[k].j;
             var span_to_modif = document.getElementById(cell_id);
             span_to_modif.textContent = data[k].content;
